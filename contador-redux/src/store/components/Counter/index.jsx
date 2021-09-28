@@ -4,7 +4,6 @@ import { addNumber, subNumber } from '../../modules/counter/actions'
 const Counter = () =>{
     const dispatch = useDispatch()
     const number = useSelector((state)=>state.number)
-    console.log(number)
     const handleAdd = () => {
         dispatch(addNumber(1))
     }
